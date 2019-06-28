@@ -41,10 +41,10 @@ router
                 file, 
                 JSON.stringify(wines),
                 function(err) {
-                if (err) {
-                    return next(new Error(err)) 
-                }
-            })
+                    if (err) {
+                        return next(new Error(err)) 
+                    }
+                })
 
             return res.status(200)    
         }
